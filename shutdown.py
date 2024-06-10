@@ -13,7 +13,7 @@ def shutdown_at_specified_time(hour, minute):
         current_minute = now.minute
        
         if current_hour == hour and current_minute == minute:
-                       os.system("shutdown /s /t 1")  # Komenda wyłączenia dla Windows
+            os.system("shutdown /s /t 1")  # Komenda wyłączenia dla Windows
             break
 
         time.sleep(60)
